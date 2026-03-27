@@ -1,0 +1,29 @@
+info:
+  name: Create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{PARH_URL}}/empleados"
+  body:
+    type: json
+    data: |2-
+          {
+            "id": 1114,
+            "nombre": "lorenzo",
+            "apellido": "Salamanca",
+            "documento": "SCF212",
+            "fechaContratacion": "2022-02-15T00:00:00",
+            "departamento": "Ventas",
+            "puestoTrabajo": "Conserje",
+            "salarioBase": 16000,
+            "activo": true
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

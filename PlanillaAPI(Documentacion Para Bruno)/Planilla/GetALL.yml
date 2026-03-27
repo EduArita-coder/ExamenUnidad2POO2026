@@ -1,0 +1,15 @@
+info:
+  name: GetALL
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{PARH_URL}}/planillas"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

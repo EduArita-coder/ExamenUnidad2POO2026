@@ -1,0 +1,29 @@
+info:
+  name: Edit
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{PARH_URL}}/empleados/1112"
+  body:
+    type: json
+    data: |2-
+          {
+            "id": 1112,
+            "nombre": "Eduardo",
+            "apellido": "Perez",
+            "documento": "SCF112",
+            "fechaContratacion": "2023-07-15T00:00:00",
+            "departamento": "Administracion",
+            "puestoTrabajo": "Administrador",
+            "salarioBase": 14000,
+            "activo": true
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

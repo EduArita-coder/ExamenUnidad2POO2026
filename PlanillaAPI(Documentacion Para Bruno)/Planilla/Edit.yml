@@ -1,0 +1,25 @@
+info:
+  name: Edit
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{PARH_URL}}/planillas//estado"
+  body:
+    type: json
+    data: |2-
+       {
+            "id": 1,
+            "periodo": "2024",
+            "fechaCreacion": "2023-05-17T00:00:00",
+            "fechaPago": "2026-05-18T00:00:00",
+            "estado": "pagada"
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

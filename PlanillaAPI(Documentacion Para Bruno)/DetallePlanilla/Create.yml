@@ -1,0 +1,30 @@
+info:
+  name: Create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{PARH_URL}}/detallesplanilla"
+  body:
+    type: json
+    data: |2-
+       {
+            "id": 1,
+            "planillaId": 1,
+            "empleadoId": 1112,
+            "salarioBase": 14000,
+            "horasExtra": 8,
+            "montoHorasExtra": 25,
+            "bonificaciones": 1000,
+            "deducciones": 250.24,
+            "salarioNeto": 0,
+            "comentarios": "Crack"
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,10 @@
+info:
+  name: Empleados
+  type: folder
+  seq: 1
+
+request:
+  headers:
+    - name: PARH_URL
+      value: http://localhost:5270
+  auth: inherit

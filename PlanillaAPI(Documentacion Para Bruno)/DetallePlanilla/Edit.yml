@@ -1,0 +1,30 @@
+info:
+  name: Edit
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{PARH_URL}}/detallesplanilla/2"
+  body:
+    type: json
+    data: |2-
+       {
+            "id": 1,
+            "planillaId": 1,
+            "empleadoId": 1112,
+            "salarioBase": 12000,
+            "horasExtra": 8,
+            "montoHorasExtra": 25,
+            "bonificaciones": 1000,
+            "deducciones": 280.24,
+            "salarioNeto": 0,
+            "comentarios": "Mastodonte"
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

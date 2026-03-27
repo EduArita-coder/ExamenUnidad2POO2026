@@ -1,0 +1,7 @@
+info:
+  name: DetallePlanilla
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit
